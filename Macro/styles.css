@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEsIHOBkFJ_84192AlDsbzglYzGy7_2H_9NQ&s");
+    background-size: cover;
+    filter: blur(1.4px);
+    z-index: -1;
+}
+
+.containera{
+    background: #f0f0f0;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.containers {
+    background-color: #cacaca;
+    padding: 40px 20px;
+    border-radius: 1rem;
+}
+
+h1 {
+    color: #1e1c1c;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    border-bottom: 3px solid #060a0c;
+    padding-bottom: 10px;
+}
+
+p {
+    color: #242424;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+}
